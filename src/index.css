@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  background-color: #F6F3EA;
+  font-size: 32px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #F6F3EA;
+  font-family: 'Century', 'Cambo';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #4F583D;
+  padding: 15px 15px 0 15px;
+  margin: 0;
+}
+
+#nav-overlay{
+  display: none;
+}
+
+.lg-text{
+  font-size: 1.25rem;
+}
+
+.md-text{
+  font-size: 1rem;
+}
+
+.sm-text{
+  font-size: .75rem;
+}
+
+.cust-nav{
+  margin: 10px 10px 10px 10px;
+}
+.cust-nav-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.705);
+}
+.overlay-exit{
+  align-self: flex-end;
+}
+
+.cust-nav-item:hover{
+  color: #CEB793;
+  cursor: pointer;
+}
+
+.home-img{
+  position: relative;
+  top: 25px;
+  width: 700px;
+  max-width: 95%;
+  box-shadow: -5px 5px 10px rgba(92, 92, 92, 0.582);
+}
+
+.main-section{
+  position: relative;
+  top: 75px;
+  padding: 0 50px 0 50px;
+}
+.invisible{
+  visibility: hidden;
+  width: 450px;
+  max-width: 100%;
+}
+.main-img-container{
+  position: relative;
+  outline: 5px solid #8FA6AC;
+  margin: 0 25px 25px 0;
+}
+.main-img{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 100%;
+  border: 10px solid #F6F3EA;
+}
+.about-bio-container{
+  width: 60%;
+}
+
+.portfolio-section{
+  margin-top: 2%;
+}
+.portfolio-img{
+  width: 350px;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.cust-form{
+  width: 600px;
+  max-width: 100%;
+}
+.cust-form-border{
+  border-color: #8FA6AC;
+}
+/* small screen */
+@media screen and (max-width: 420px){
+  html{
+    font-size: 16px;
+  }
+  .about-bio-container{
+    width: 100%;
+  }
+}
+
+/* small-medium screen */
+@media screen and (max-width: 1250px){
+  .about-bio-container{
+    padding-top: 25px;
+
+  }
+  .main-section{
+    position: relative;
+    top: 25px;
+    padding: 0 0 0 0;
+  }
+}
+
+/* medium screen */
+@media screen and (min-width: 421px) and (max-width: 1250px){
+  .about-bio-container{
+    width: 70%;
+  }
+}
+
+/* medium-large screen */
+@media screen and (min-width: 421px){
+  .home-img{
+    transform: rotate(90deg);
+    top:-75px;
+    box-shadow: 5px -5px 10px rgba(92, 92, 92, 0.582);
+  }
+  .portfolio-img{
+    margin: 0 10px 0 10px;
+  }
+}
+
+/*  large screen */
+@media screen and (min-width: 1251px){
+  .about-bio-container{
+    padding-left: 75px;
+  }
 }
