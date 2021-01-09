@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/client-hswoish/static/css/main.91451333.chunk.css",
+    "main.js": "/client-hswoish/static/js/main.0944ecf5.chunk.js",
+    "main.js.map": "/client-hswoish/static/js/main.0944ecf5.chunk.js.map",
+    "runtime-main.js": "/client-hswoish/static/js/runtime-main.a484afd4.js",
+    "runtime-main.js.map": "/client-hswoish/static/js/runtime-main.a484afd4.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "/client-hswoish/static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.99a461b2.chunk.js": "/client-hswoish/static/js/2.99a461b2.chunk.js",
+    "static/js/2.99a461b2.chunk.js.map": "/client-hswoish/static/js/2.99a461b2.chunk.js.map",
+    "static/js/3.ab4c15ca.chunk.js": "/client-hswoish/static/js/3.ab4c15ca.chunk.js",
+    "static/js/3.ab4c15ca.chunk.js.map": "/client-hswoish/static/js/3.ab4c15ca.chunk.js.map",
+    "index.html": "/client-hswoish/index.html",
+    "static/css/2.ae9f1eb3.chunk.css.map": "/client-hswoish/static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.91451333.chunk.css.map": "/client-hswoish/static/css/main.91451333.chunk.css.map",
+    "static/js/2.99a461b2.chunk.js.LICENSE.txt": "/client-hswoish/static/js/2.99a461b2.chunk.js.LICENSE.txt",
+    "static/media/IMG_2843.752db88a.jpg": "/client-hswoish/static/media/IMG_2843.752db88a.jpg",
+    "static/media/IMG_5173.bbaa6e0d.jpg": "/client-hswoish/static/media/IMG_5173.bbaa6e0d.jpg",
+    "static/media/headshot.d613de90.jpg": "/client-hswoish/static/media/headshot.d613de90.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a484afd4.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.99a461b2.chunk.js",
+    "static/css/main.91451333.chunk.css",
+    "static/js/main.0944ecf5.chunk.js"
+  ]
+}
