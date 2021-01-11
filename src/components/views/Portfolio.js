@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import HomeLink from '../objects/HomeLink'
-import Navigation from '../objects/Navigation'
 import gallery from '../../gallery.json'
+import NavBar from '../objects/NavBar'
 export default function Portfolio() {
     useEffect(() => {
         loadImgs()
@@ -9,10 +8,7 @@ export default function Portfolio() {
 
     return (
         <>
-            <div className="d-flex flex-row justify-content-between align-items-center">
-                <HomeLink />
-                <Navigation turnButton={true} />
-            </div>
+            <NavBar/>
             <div className="portfolio-section d-flex flex-row flex-wrap justify-content-center">
                 <div id="gallery-col-1" className="d-flex flex-column" />
                 <div id="gallery-col-2" className="d-flex flex-column" />

@@ -1,16 +1,58 @@
 import React, { useState } from 'react'
+import * as emailjs from 'emailjs-com'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 export default function ContactForm() {
-    let defualtForm = {
-        name: "",
-        email: "",
-        message: ""
-    }
-    const [formData, setFormData] = useState(defualtForm)
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(formData.name)
+        if (!name || !email || !message) {
+            alert("Please fill out whole form")
+        }
+        else {
+            const template = {
+                sender_name: name,
+                sender_email: email,
+                message: message
+            }
+
+            // emailjs.send(
+            //     'service_wq5bs3f',
+            //     'template_33jh54i',
+            //     template,
+            //     'user_4VLHrFXNYi3NswZxuFCVx'
+            // )
+
+            alert("Form succesfully submited!")
+        }
+        resetForm(e)
+    }
+
+    const handleChange = (e) => {
+        let form = e.target.name
+        let value = e.target.value
+
+        if (form === "name") {
+            setName(value)
+        }
+        if (form === "email") {
+            setEmail(value)
+        }
+        if (form === "message") {
+            setMessage(value)
+        }
+
+
+    }
+
+    const resetForm = (e) => {
+        setName("")
+        setEmail("")
+        setMessage("")
+        e.target.reset()
     }
 
 
@@ -20,28 +62,31 @@ export default function ContactForm() {
             <Form onSubmit={handleSubmit}>
                 <Form.Control
                     className="bg-transparent mt-2 cust-form-border "
+                    name="name"
                     size="sm"
                     type="text"
                     placeholder="Name*"
-                    onChange={(e) => setFormData({ name: e.target.value })}
+                    onChange={handleChange}
                 />
                 <Form.Control
                     className="bg-transparent mt-2 cust-form-border"
+                    name="email"
                     size="sm"
                     type="email"
                     placeholder="Email*"
-                    onChange={(e) => setFormData({ email: e.target.value })}
+                    onChange={handleChange}
                 />
                 <Form.Control
                     className="bg-transparent mt-2 cust-form-border"
+                    name="message"
                     size="sm"
                     as="textarea"
                     rows="5"
                     placeholder="Message*"
-                    onChange={(e) => setFormData({ message: e.target.value })}
+                    onChange={handleChange}
                 />
 
-                <Button size="sm" className="bg-transparent mt-2 text-secondary cust-form-border" type="submit"> Submit </Button>
+                <Button size="sm" className="bg-transparent mt-2 text-secondary cust-form-border cust-form-button" type="submit"> Submit </Button>
             </Form>
         </div>
     )

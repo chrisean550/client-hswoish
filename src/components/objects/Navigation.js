@@ -2,16 +2,12 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
+import $ from 'jquery'
 
 export default function Navigation(props) {
     //display toggle
-    const toggleDisplay = (show) => {
-        if (show) {
-            document.getElementById('nav-overlay').style.display = 'block'
-        }
-        else {
-            document.getElementById('nav-overlay').style.display = 'none'
-        }
+    const toggleDisplay = () => {
+        $('#nav-overlay').fadeToggle('fast')
     }
 
     // responsible for setting the correct display verion of the navbar
@@ -19,10 +15,10 @@ export default function Navigation(props) {
     if (props.turnButton && document.body.clientWidth < 1250) {
         display =
             <>
-                <i className="fa fa-bars cust-nav" onClick={() => toggleDisplay(true)} />
+                <i className="fa fa-bars cust-nav" onClick={toggleDisplay} />
                 <div id="nav-overlay" className="cust-nav-overlay">
                     <Navbar className="flex-column justify-content-center md-text cust-nav h-100">
-                        <i className="fa fa-times overlay-exit" onClick={() => toggleDisplay(false)} />
+                        <i className="fa fa-times overlay-exit" onClick={toggleDisplay} />
                         <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/portfolio">
                             <Nav.Item className="cust-nav-item">PORTFOLIO</Nav.Item>
                         </Link>

@@ -1,15 +1,11 @@
 import React from 'react'
-import HomeLink from '../objects/HomeLink'
-import Navigation from '../objects/Navigation'
 import headshot from '../../imgs/headshot.jpg'
+import NavBar from '../objects/NavBar'
 
 export default function About() {
     return (
         <>
-            <div className="d-flex flex-row justify-content-between align-items-center">
-                <HomeLink />
-                <Navigation turnButton={true} />
-            </div>
+            <NavBar/>
             <div className="main-section">
                 <div className="d-flex flex-wrap flex-row align-items-center justify-content-center">
                     <div className="main-img-container">

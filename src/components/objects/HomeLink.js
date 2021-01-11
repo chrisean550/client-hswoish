@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function HomeLink() {
     return (
         <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
-            <Navbar.Brand className='lg-text cust-nav cust-nav-item ml-md-5'>
+            <Navbar.Brand className='lg-text cust-nav cust-nav-item'>
                 Hannah Swoish
             </Navbar.Brand>
         </Link>

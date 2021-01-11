@@ -3,6 +3,7 @@ html{
   font-size: 32px;
 }
 
+
 body{
   background-color: #F6F3EA;
   font-family: 'Century', 'Cambo';
@@ -10,7 +11,7 @@ body{
   font-style: normal;
   font-size: 32px;
   color: #4F583D;
-  padding: 15px 15px 0 15px;
+  padding: 0 15px 0 15px;
   margin: 0;
 }
 
@@ -30,6 +31,11 @@ body{
   font-size: .75rem;
 }
 
+.cust-navbar{
+  box-shadow: 1px 1px 10px #0000002a;
+  background-color:#F6F3EA;
+  margin: 0 -15px 0 -15px;
+}
 .cust-nav{
   margin: 10px 10px 10px 10px;
 }
@@ -81,7 +87,7 @@ body{
   top: 25px;
   left: 25px;
   width: 100%;
-  border: 10px solid #F6F3EA;
+  outline: 10px solid #F6F3EA;
 }
 .about-bio-container{
   width: 60%;
@@ -102,6 +108,10 @@ body{
 }
 .cust-form-border{
   border-color: #8FA6AC;
+}
+.cust-form-button:hover{
+  border-color: white;
+  box-shadow: 1px 1px 5px #5f5f5f62;
 }
 /* small screen */
 @media screen and (max-width: 420px){
