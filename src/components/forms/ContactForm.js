@@ -9,6 +9,7 @@ export default function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
         if (!name || !email || !message) {
             alert("Please fill out whole form")
         }
@@ -19,15 +20,19 @@ export default function ContactForm() {
                 message: message
             }
 
-            // emailjs.send(
-            //     'service_wq5bs3f',
-            //     'template_33jh54i',
-            //     template,
-            //     'user_4VLHrFXNYi3NswZxuFCVx'
-            // )
-
-            alert("Form succesfully submited!")
+            emailjs.send(
+                'service_wq5bs3f',
+                'template_33jh54i',
+                template,
+                'user_4VLHrFXNYi3NswZxuFCVx'
+            ).then(response => {
+                alert("Form succesfully submited!")
+            }, error => {
+                alert("Sorry something went wrong")
+                console.log(`Error: ${error}`)
+            })
         }
+        
         resetForm(e)
     }
 
@@ -44,8 +49,6 @@ export default function ContactForm() {
         if (form === "message") {
             setMessage(value)
         }
-
-
     }
 
     const resetForm = (e) => {
