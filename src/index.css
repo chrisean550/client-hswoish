@@ -19,6 +19,13 @@ body{
   display: none;
 }
 
+.slide-left{
+  left:-400px
+}
+.slide-right{
+  right:-400px
+}
+
 .lg-text{
   font-size: 1.25rem;
 }
@@ -90,6 +97,7 @@ body{
   outline: 10px solid #F6F3EA;
 }
 .about-bio-container{
+  position: relative;
   width: 60%;
 }
 

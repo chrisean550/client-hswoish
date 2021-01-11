@@ -15,6 +15,13 @@ export default function Contact() {
                         <img src={img} className="main-img" alt="" />
                     </div>
                 </div>
+                <div className="d-flex flex-row justify-content-center p-3">
+                    <a href="https://www.instagram.com/michel.han.gelo/" style={{color: 'inherit', textDecoration: 'inherit'}}>
+                        <i  className="fa fa-instagram" aria-hidden="true"/>
+                    </a>
+                    
+                </div>
+                
             </div>
         </>
     )

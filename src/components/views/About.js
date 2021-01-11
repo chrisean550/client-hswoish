@@ -1,18 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import headshot from '../../imgs/headshot.jpg'
 import NavBar from '../objects/NavBar'
+import $ from 'jquery'
+
 
 export default function About() {
+    useEffect(()=>{
+        $(".slide-left").animate({left:"0px"}, "slow")
+        $(".slide-right").animate({right:"0px"}, "slow")
+        
+    })
+
     return (
         <>
             <NavBar/>
             <div className="main-section">
                 <div className="d-flex flex-wrap flex-row align-items-center justify-content-center">
-                    <div className="main-img-container">
+                    <div className="slide-left main-img-container">
                         <img src={headshot} className="invisible" alt="" />
                         <img src={headshot} className="main-img" alt="" />
                     </div>
-                    <div className="about-bio-container">
+                    <div className="slide-right about-bio-container">
                         <p className="md-text">
                             Hi! My name is Hannah, you can call me Han too. I grew up 
                             in Atlanta, GA but have been calling Pittsburgh my home for

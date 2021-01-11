@@ -35,13 +35,13 @@ export default function Navigation(props) {
         display =
             <Navbar className="flex-row flex-wrap justify-content-around w-50 md-text cust-nav">
                 <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/portfolio">
-                    <Nav.Item className="cust-nav-item">PORTFOLIO</Nav.Item>
+                    <Nav.Item className="cust-nav-item pl-1">PORTFOLIO</Nav.Item>
                 </Link>
                 <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/about">
-                    <Nav.Item className="cust-nav-item">ABOUT</Nav.Item>
+                    <Nav.Item className="cust-nav-item pl-1">ABOUT</Nav.Item>
                 </Link>
                 <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/contact">
-                    <Nav.Item className="cust-nav-item">CONTACT</Nav.Item>
+                    <Nav.Item className="cust-nav-item pl-1">CONTACT</Nav.Item>
                 </Link>
             </Navbar>
 
