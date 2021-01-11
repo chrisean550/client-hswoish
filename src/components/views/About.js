@@ -14,16 +14,17 @@ export default function About() {
                     </div>
                     <div className="about-bio-container">
                         <p className="md-text">
-                            Lrem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Proin fermentum
-                            leo vel orci porta non pulvinar neque. Nulla facilisi morbi tempus
-                            iaculis urna id volutpat lacus laoreet. Convallis a cras semper auctor
-                            neque vitae. Mattis pellentesque id nibh tortor id aliquet lectus
-                            proin. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla
-                            facilisi. Dignissim convallis aenean et tortor at risus viverra.
-                            Eget nullam non nisi est sit amet facilisis magna etiam. Turpis
-                            egestas pretium aenean pharetra magna ac placerat. Ornare lectus
-                            sit amet est placerat in egestas.
+                            Hi! My name is Hannah, you can call me Han too. I grew up 
+                            in Atlanta, GA but have been calling Pittsburgh my home for
+                            the last 3 years after deciding to pursue my college career
+                             at the University of Pittsburgh. I am a self-taught artist
+                            and mainly work with acrylics and charcoals. I’d say a lot
+                            of my art content revolves around a sense of bringing an
+                            emotion to life. When I put a brush onto canvas or a pencil
+                            onto paper, I fully immerse myself into the body of work and
+                            thus usually see a lot of my emotion poured out onto the piece.
+                            Art is where I feel comfortable to express who I am. My art is an
+                            extension of myself.
                             
                         </p>
                     </div>
