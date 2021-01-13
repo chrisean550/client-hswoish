@@ -6,8 +6,8 @@ import $ from 'jquery'
 
 export default function About() {
     useEffect(()=>{
-        $(".slide-left").animate({left:"0px"}, "slow")
-        $(".slide-right").animate({right:"0px"}, "slow")
+        $(".slide-left").animate({opacity:"1", left:"0px"}, 1500)
+        $(".slide-right").animate({opacity:"1", right:"0px"}, 1500)
         
     })
 

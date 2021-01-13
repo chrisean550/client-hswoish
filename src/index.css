@@ -20,10 +20,12 @@ body{
 }
 
 .slide-left{
-  left:-400px
+  opacity: 0;
+  left:-400px;
 }
 .slide-right{
-  right:-400px
+  right:-400px;
+  opacity:0;
 }
 
 .lg-text{
@@ -111,6 +113,7 @@ body{
 }
 
 .cust-form{
+  position: relative;
   width: 600px;
   max-width: 100%;
 }
