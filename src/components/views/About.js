@@ -22,17 +22,10 @@ export default function About() {
                     </div>
                     <div className="slide-right about-bio-container">
                         <p className="md-text">
-                            Hi! My name is Hannah, you can call me Han too. I grew up 
-                            in Atlanta, GA but have been calling Pittsburgh my home for
-                            the last 3 years after deciding to pursue my college career
-                             at the University of Pittsburgh. I am a self-taught artist
-                            and mainly work with acrylics and charcoals. I’d say a lot
-                            of my art content revolves around a sense of bringing an
-                            emotion to life. When I put a brush onto canvas or a pencil
-                            onto paper, I fully immerse myself into the body of work and
-                            thus usually see a lot of my emotion poured out onto the piece.
-                            Art is where I feel comfortable to express who I am. My art is an
-                            extension of myself.
+                        Hi! My name is Hannah. I grew up in Atlanta, GA but have been calling Pittsburgh, PA my home for the last 3 years after deciding to pursue my college career at the University of Pittsburgh. I am a self-taught artist and mainly work with acrylics and charcoals. More recently, I’ve taken a dive into the world of ‘fluid acrylics’ and have been loving experimenting with various pouring mediums/techniques.
+Art is where I feel the most comfortable to express who I am and to let go of any stress or anxiety I am feeling in the moment. When I start a piece, I disconnect from the world and immerse myself into the body of work. Although I prefer to leave the interpretation of my artwork up to the viewer, I do tend to see a lot of my own emotion poured out onto the piece.
+That being said, my art is an extension of myself. 
+
                             
                         </p>
                     </div>
