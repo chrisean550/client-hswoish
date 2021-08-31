@@ -19,15 +19,6 @@ body{
   display: none;
 }
 
-.slide-left{
-  opacity: 0;
-  left:-400px;
-}
-.slide-right{
-  right:-400px;
-  opacity:0;
-}
-
 .lg-text{
   font-size: 1.25rem;
 }
@@ -170,5 +161,13 @@ body{
 @media screen and (min-width: 1251px){
   .about-bio-container{
     padding-left: 75px;
+  }
+  .slide-left{
+    opacity: 0;
+    left:-400px;
+  }
+  .slide-right{
+    right:-400px;
+    opacity:0;
   }
 }

@@ -6,8 +6,8 @@ import $ from 'jquery'
 
 export default function About() {
     useEffect(()=>{
-        $(".slide-left").animate({opacity:"1", left:"0px"}, 1500)
-        $(".slide-right").animate({opacity:"1", right:"0px"}, 1500)
+        $(".slide-left").animate({opacity:"1", left:"0px"}, 500)
+        $(".slide-right").animate({opacity:"1", right:"0px"}, 500)
         
     })
 
@@ -16,7 +16,7 @@ export default function About() {
             <NavBar/>
             <div className="main-section">
                 <div className="d-flex flex-wrap flex-row align-items-center justify-content-center">
-                    <div className="slide-left main-img-container">
+                    <div className="main-img-container">
                         <img src={headshot} className="invisible" alt="" />
                         <img src={headshot} className="main-img" alt="" />
                     </div>

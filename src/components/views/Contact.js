@@ -6,7 +6,7 @@ import $ from 'jquery'
 
 export default function Contact() {
     useEffect(()=>{
-        $(".slide-right").animate({right:"0px", opacity:"1"}, 1500)
+        $(".slide-right").animate({right:"0px", opacity:"1"}, 500)
     })
     return (
         <>
